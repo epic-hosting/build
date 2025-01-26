@@ -2,9 +2,11 @@ import { build } from 'bun'
 
 const output = 'dist'
 
+console.log('Starting a failing build...')
+
 await build({
-  entrypoints: ['./index.ts'],
+  entrypoints: ['./missing.ts'],
   outdir: output,
 })
 
-console.log(`Built assets found in /${output}`)
+console.error('This build will fail!')
