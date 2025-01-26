@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "build": "bun build"
+        "build": "bun build.ts"
     },
     "devDependencies": {
         "@types/bun": "^1.2.0"
